@@ -3,6 +3,11 @@
   * Secondary color: Teal
 */
 
+body {
+  background: green;
+}
+
+
 h1 {
   color: teal;
   font-family: 'Raleway', sans-serif;
