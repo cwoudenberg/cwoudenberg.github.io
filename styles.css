@@ -4,7 +4,6 @@
   * Accent color: silver/grey
 */
 
-
 body {
   margin: 0;
   top: 0;
@@ -106,8 +105,9 @@ h1, h2, h3, a {
 p {
     color: slategrey;
     font-family: 'Open Sans', ;
-    column-count: 2;
+      column-count: 2;
     column-width: 300px;
+  column-span: all;
 }
 
 #aboutme {
@@ -123,10 +123,11 @@ p {
   color: grey;
 }
 
-.selfportrait {
+.selfportrait img {
   margin: 0 0 0 15px;
   display: flex;
   justify-content: center;
+  border-radius: 50%;
 }
 
 
