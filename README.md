@@ -36,7 +36,7 @@ My name is Chance Woudenberg and I am a Visual Communication Design major at Eas
 * Slategrey
 
 # Fonts:
-* [Raleway](https://fonts.google.com/selection?selection.family=Raleway)
+* [Raleway](https://fonts.googleapis.com/css?family=Raleway:100&display=swap)
 * [Open Sans](https://fonts.google.com/selection?selection.family=Open+Sans)
 
 # Imagery:
