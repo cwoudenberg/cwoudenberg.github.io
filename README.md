@@ -3,8 +3,9 @@ chancejenna.online
 
 ## Style Tile
 ### Colors
-* Black
-* Lightseagreen
+* Grey
+* Slategrey
+* White
 
 ### Typography
 * Raleway
@@ -30,9 +31,9 @@ My name is Chance Woudenberg and I am a Visual Communication Design major at Eas
 * Styled
 
 # Colors:
-* Black
+* Grey
 * White
-* Aqua
+* Slategrey
 
 # Fonts:
 * [Raleway](https://fonts.google.com/selection?selection.family=Raleway)

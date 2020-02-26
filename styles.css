@@ -1,98 +1,132 @@
 /* Style Guide 
-  * Primary color: Grey
-  * Secondary color: lightseagreen
+  * Primary color: White
+  * Secondary color: slategrey
+  * Accent color: silver/grey
 */
-
-/* CSS Variables */
-main { 
-  margin: 0 auto;
-  width: 90%;
-    
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-main img {
-
-  grid-column: 1 / 1;
-}
-
-
-/* Mobile 
-  0 to 26em (416 pixels)
-*/
-@media only screen and (min-width: 0) { 
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
-}
-
-/* Tablet 
-  26em (416 pixels) to 72em (1,152 pixels)
-*/
-@media only screen and (min-width: 26em)  {
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
-}
-
-/* Desktop 
-   72em (1,152 pixels) to 90em (1440 pixels)
-*/
-@media screen and (min-width: 72em)  { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
-}
-
-/* Wide Desktop: 
-  Greater than 90em (1440px)
-*/
-@media screen and (min-width: 90em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Wide Desktop Size";
-  }
-
-}
-
 
 
 body {
-  background: lightseagreen;
+  margin: 0;
+  top: 0;
+}
+
+nav {
+  background: lightslategrey;
+  display: flex;  
+  justify-content: flex-end;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav h1 {
+  flex-grow: 1;
+}
+
+nav a:link,
+nav a:visited {
+  color: white;
+  text-decoration: none;
+  padding: .5em;
+  margin: .5em;
+}
+
+nav a:focus {
+  color: silver;
+}
+
+nav a:hover, 
+nav a:active {
+  color: silver;
+}
+
+@media screen and (max-width: 480px) {
+  
+  nav {
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  main {
+    flex-direction: column;
+  }
 }
 
 
-h1 {
-  color: teal;
-  font-family: 'Raleway', sans-serif;
-  font-size: 48px;
-  letter-spacing: 2px;
+#bg {
+  background: lightslategrey;
+  background: nonlinear-gradient(to , #1c92d2, #f2fcfe);
+  
+  position: absolute;
+  height: 400px;
+  width: 100%;
+}
+
+.name {
+  color: white;
   text-align: center;
 }
 
+.introname {
+  font-size: 3em;
+  position: relative;
+  top: 100px;
+}
+
+.dc {
+  font-size: 1em;
+  color: silver;
+  position: relative;
+  top: 60px;
+}
+
+hr {
+  color: white;
+  width: 30%;
+  display: flex;
+  position: relative;
+  top: 60px;
+}
+
+.welcome {
+  font-size: 1em;
+  color: silver;
+  position: relative;
+  top: 60px;
+}
+
+h1, h2, h3, a {
+  font-family: 'Raleway', sans-serif;
+}
+
 p {
+    color: slategrey;
+    font-family: 'Open Sans', ;
+    column-count: 2;
+    column-width: 300px;
+}
+
+#aboutme {
+  position: relative;
+  top: 400px;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+.about {
+  font-size: 1.5em;
   color: grey;
 }
 
-/* Typography 
-  * Primary font:  font-family: 'Raleway', sans-serif;
-*/
-
-img {
-  width: 100%;
+.selfportrait {
+  margin: 0 0 0 15px;
+  display: flex;
+  justify-content: center;
 }
+
+
