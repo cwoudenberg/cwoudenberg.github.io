@@ -11,6 +11,7 @@ body {
 
 nav {
   background: lightslategrey;
+  padding: 0 20px 0 0;
   display: flex;  
   justify-content: flex-end;
   font-family: 'Raleway', sans-serif;
@@ -39,26 +40,32 @@ nav a:active {
 
 @media screen and (max-width: 480px) {
   
-  nav {
+  nav, main, .container {
     flex-direction: column;
   }
-  
-  main {
+    .selfportrait img {
+  float: inherit;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .container {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 970px) {
   
   main {
     flex-direction: column;
+    align-items: center;
+    width: 1fr;
   }
 }
 
 
 #bg {
   background: lightslategrey;
-  background: nonlinear-gradient(to , #1c92d2, #f2fcfe);
   
   position: absolute;
   height: 400px;
@@ -74,6 +81,7 @@ nav a:active {
   font-size: 3em;
   position: relative;
   top: 100px;
+  padding: 0 0 10px 0;
 }
 
 .dc {
@@ -98,20 +106,19 @@ hr {
   top: 60px;
 }
 
-h1, h2, h3, a {
+h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
 }
 
-p {
+main p {
     color: slategrey;
     font-family: 'Open Sans';
-    font-size: .9em;
       column-count: 2;
     column-width: 300px;
   column-span: all;
 }
 
-#aboutme {
+#aboutme, .container {
   position: relative;
   top: 400px;
   display: flex;
@@ -121,16 +128,96 @@ p {
 
 .about {
   font-size: 1.5em;
-  color: grey;
+  color: dimgrey;
 }
 
 .selfportrait img {
-  margin: 0 0 0 15px;
+  margin: 40px 0 40px 20px;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
 }
 
 
+
+.icon {
+  width: 50px;
+  height: 50px; 
+  filter: invert(100);
+  padding: 10px 0 0 0;
+}
+
+
+.item {
+	padding: 15px;
+	margin: 5px;	
+	background: lightslategrey;
+	border-radius: 3px;
+  text-align: center;
+}
+
+.item h3 {
+  color: white;
+  padding: 0 0 -50px 0;
+}
+
+.item p {
+  font-family: 'Open Sans';
+  color: silver;
+  font-size: .9em;
+  padding: 20px;
+}
+
+
+
+.portimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background: slategrey;
+  position: relative;
+  top: 430px;
+  transition: .5s ease-in-out;
+}
+
+.grid img {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.grid .hovinfo {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.grid h1 {
+  color: white;
+  text-shadow: 1px 1px 10px dimgrey;
+}
+
+.animtext {
+  color: white;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.grid:hover img {
+  opacity: 0.1;
+}
+
+.grid:hover .animtext {
+  opacity: 1;
+}
